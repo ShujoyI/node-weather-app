@@ -1,0 +1,19 @@
+{
+  "name": "node-weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShujoyI/node-weather-app.git"
+  },
+  "author": "Shujoy Islam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShujoyI/node-weather-app/issues"
+  },
+  "homepage": "https://github.com/ShujoyI/node-weather-app#readme"
+}
