@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ShujoyI/node-weather-app/issues"
   },
-  "homepage": "https://github.com/ShujoyI/node-weather-app#readme"
+  "homepage": "https://github.com/ShujoyI/node-weather-app#readme",
+  "dependencies": {
+    "fetch": "^1.1.0"
+  }
 }
