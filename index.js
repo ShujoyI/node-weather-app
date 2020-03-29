@@ -9,15 +9,19 @@ const API_KEY = process.env.NODE_WEATHER_APP_API_KEY;
 // city to get weather data from
 let city = 'Los Angeles, US'
 
-let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}`;
+let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=${API_KEY}`;
 
 async function response() {
     console.log('Wowie');
 }
 
 //let weather = JSON.parse(res);
+let message = 
 
 fetch(url)
     .then(res => res.text())
-    .then(body => console.log(body))
+    .then(body => {
+        let weather = JSON.parse(body);
+        console.log(weather);
+    })
     .catch(err => console.error(err));
