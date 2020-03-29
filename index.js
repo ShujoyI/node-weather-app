@@ -22,6 +22,7 @@ fetch(url)
     .then(res => res.text())
     .then(body => {
         let weather = JSON.parse(body);
-        console.log(weather);
+        let message = `It's ${weather.main.temp} degrees Farenheit in ${weather.name}!`;
+        console.log(message);
     })
     .catch(err => console.error(err));
