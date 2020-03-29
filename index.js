@@ -1,18 +1,21 @@
+// dotenv module it use environmental variables
+require('dotenv').config({path: 'variables.env'});
 const fetch = require('node-fetch');
 
-// need to learn to hide apiKey
-let apiKey = '9dc9bda53cd4556e407c38cd07a0dff8';
+// using env variable for API key
+// not fully secure for real apps!
+const API_KEY = process.env.NODE_WEATHER_APP_API_KEY;
 
 // city to get weather data from
-let city = 'Cerritos, US'
+let city = 'Los Angeles, US'
 
-let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`;
+let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}`;
 
 async function response() {
     console.log('Wowie');
 }
 
-//let weather = JSON.parse(body);
+//let weather = JSON.parse(res);
 
 fetch(url)
     .then(res => res.text())
