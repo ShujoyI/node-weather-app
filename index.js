@@ -8,6 +8,8 @@ async function response() {
     console.log('Wowie');
 }
 
+//let weather = JSON.parse(body);
+
 fetch(url)
     .then(res => res.text())
     .then(body => console.log(body));
