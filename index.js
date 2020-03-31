@@ -12,7 +12,7 @@ let city = 'Los Angeles, US'
 let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=${API_KEY}`;
 
 //let weather = JSON.parse(res);
-let message = 
+//let message = 
 
 fetch(url)
     .then(res => res.text())
