@@ -7,12 +7,9 @@ const fetch = require('node-fetch');
 const API_KEY = process.env.NODE_WEATHER_APP_API_KEY;
 
 // city to get weather data from
-let city = 'Los Angeles, US'
+let city = 'Los Angeles, US';
 
 let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=${API_KEY}`;
-
-//let weather = JSON.parse(res);
-let message = 
 
 fetch(url)
     .then(res => res.text())
